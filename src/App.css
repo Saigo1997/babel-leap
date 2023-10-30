@@ -1,7 +1,80 @@
-.logo.vite:hover {
-  filter: drop-shadow(0 0 2em #747bff);
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafb);
+.phrase-detail, .controll-area {
+  float: left;
+}
+.controll-area {
+  margin-left: 8px;
+}
+
+.phrase-detail {
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 4px;
+  font-family: 'Inter, Avenir, Helvetica, Arial, sans-serif';
+  font-size: 20px;
+  height: 100px;
+  width: 500px;
+  text-align: left;
+}
+
+.fileNameField {
+  width: calc(100vw - 600px);
+}
+
+.all-editor {
+  margin-top: 10px;
+  padding-left: 10px;
+  height: calc(100% - 120px);
+
+  overflow-y: scroll;
+  border: 1px solid rgb(90, 90, 90);
+  background-color: rgb(30, 30, 30);
+}
+
+.DraftEditor-root,
+.translate-area-root {
+  text-align: left;
+  border: 1px solid rgb(90, 90, 90);
+  padding: 4px;
+  margin: 12px 0px;
+  border-radius: 4px;
+  font-family: 'Inter, Avenir, Helvetica, Arial, sans-serif';
+  font-size: 20px;
+  width: 48%;
+  float: left;
+  height: auto;
+  bottom: 0;
+  background-color: rgb(50, 50, 50);;
+}
+
+.DraftEditor-root {
+  margin-right: 4px;
+}
+
+.public-DraftEditor-content div div,
+.translate-content div div {
+  margin-bottom: 6px;
+}
+
+.translate-content div div {
+  overflow-y: scroll;
+}
+
+.translate-phrase {
+  background-color: rgb(110, 110, 110);
+  padding: 0 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.translated-block-button {
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 2px;
+  background-color: rgb(90, 90, 90);
+  cursor: pointer;
 }
